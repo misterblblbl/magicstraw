@@ -1,4 +1,3 @@
-
 body {
 	background: #39b59c url("../img/bg-pattern.png") repeat 50% 50%;
 	font-family: 'Neucha', cursive;
@@ -20,13 +19,6 @@ body {
 	display: table;
 	clear: both;
 }
-
-a {
-	text-decoration: none;
-	color: red;
-	cursor: pointer;
-}
-
 .main-header {
 	height: 120px;
 	width: auto;
@@ -45,54 +37,32 @@ a {
 	background: url("../img/curved-line.svg");
 }
 
-.main-header .user-block {
-	float: right;
-	margin-top: 40px;
-	outline: 2px dotted green;
-}
-
 .main-navigation {
 	height: 68px;
-	width: 760px;
-	padding: 0 20px;
+	width: 800px;
 	background-image: url("../img/ribbon.svg");
 	margin: 0 auto;
 	position: relative;
-	top: 80px;
+	top: 100px;
 	z-index: 1;
 }
 
-.main-navigation .menu-left {
+.main-navigation .left {
  	float: left;
- 	padding: 20px;
- 	padding-left: 30px;
+ 	padding: 10px;
+ 	padding-left: 150px;
 }
-.main-navigation .menu-right {
+.main-navigation .right {
  	float: right;
- 	padding: 20px;
- 	padding-left: 80px;
- 	padding-right: 20px;
-}
+ 	padding: 10px;
+ 	padding-right: 150px;
+ }
 
-.main-navigation a:nth-child(2) {
-	display: inline-block;
-	margin-left: 60px;
-}
-
-.main-navigation a,
-.main-navigation span {
-	font-size: 20px;
-	text-shadow: 1px 1px 0 white;
-	font-weight: 600;
-}
-
-.main-navigation a:hover {
+.main-navigation .right span,
+.main-navigation .left span {
+	font-size: 36px;
 	color: white;
-	text-shadow: 1px 1px 0 red;
-}
-
-.main-navigation span {
-	color: #ff8400
+	text-shadow: 0 0 7px red;
 }
 
 .header-logo {
@@ -107,7 +77,7 @@ a {
 }
 .main-picture {
 	float: left;
-	width: 58%;
+	width: 68%;
 	margin-right: 1%;
 }
 
@@ -118,7 +88,7 @@ a {
 
 .main-description {
 	float: right;
-	width: 41%;
+	width: 31%;
 	color: #ffffff;
 	font-size: 18px;
 }
@@ -128,7 +98,7 @@ a {
 }
 
 .main-footer {
-	min-height: 200px;
+	min-height: 150px;
 	width: 100%;
 	position: relative;
 	background-color: #ffffff;
@@ -148,56 +118,93 @@ a {
 	-webkit-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 }
-.footer-navigation {
-	padding-left: 100px;
-	position: absolute;
-	top: -80px;
-	z-index: 10;
-}
-.footer-navigation li {
-	display: inline-block;
-	height: 160px;
-	width: 160px;
-	margin-right: 20px;
-	border-radius: 50%;
-	background-color: white;
-	position: relative;
-	box-shadow: 3px 3px 0 2px rgba(0, 0, 0, 0.45);
-	font-size: 18px;
-	text-align: center;
-}
-
-.footer-navigation li:hover {
-	box-shadow: 0 0 0 5px #39b59c;
-}
-
-.footer-navigation li:first-child {
-	height: 140px;
-	width: 140px;
-}
-
-.footer-navigation li:last-child {
-	height: 150px;
-	width: 150px;
-}
-
-.footer-navigation li a {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(-17deg);
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.footer-navigation li a:hover {
-	color: #39b59c;
-	text-decoration: underline;
-}
 
 .footer-copyright {
-	padding-top: 140px;
+	float: left;
+	padding-top: 50px;
 	color: lightgrey;
 }
+
+.footer-nav {
+	float: right;
+	padding-top: 50px;
+}
+
+.footer-nav a {
+	font-size: 22px;
+	color: orangered;
+	text-decoration: none;
+}
+
+.greeting {
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	z-index: 10;
+	min-width: 900px;
+}
+
+.ribbon {
+  position: relative;
+  width: 100%;
+  min-width: 500px;
+  margin: 3em auto;
+}
+
+H2 {
+  margin: 0 1em;
+  background: orangered;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.7em;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0,0,0,.4);
+          box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  color: #FFF;
+}
+.ribbon:before,
+.ribbon:after,
+  H2:before,
+  H2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.ribbon:before,
+.ribbon:after {
+    top: 1.4em;
+    z-index: -2;
+    border: 1.6em solid orangered; 
+}
+.ribbon:before {
+    left: 0;
+    border-left-color: transparent;
+}
+.ribbon:after {
+    right: 0;
+    border-right-color: transparent;
+}
+H2:before,
+H2:after {
+	top: 1.7em;
+	z-index: -1;
+	border: .3em solid crimson;
+	border-bottom-color: transparent;
+}
+H2:before {
+	left: 1em;
+	border-left-color: transparent;
+}  
+H2:after {
+	right: 1em;
+	border-right-color: transparent;
+} 
 
 /* ********************************************СЛАЙДЕР**************************** */
 .main-action {
