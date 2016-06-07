@@ -13,9 +13,8 @@ body {
 .main-header {
 	position: relative;
 	width: auto;
-
 	min-height: 150px;
-	height: 20vh;
+	height: 16vh;
 
 	background-color: #ffffff;
 	box-shadow: 5px 5px 50px 0 black;
@@ -31,8 +30,9 @@ body {
 }
 
 .main-content {
-	height: 60vh;
-	min-height: 600px;
+	position: relative;
+	height: 63vh;
+	min-height: 650px;
 	padding-top: 90px;
 	box-sizing: border-box;
 }
@@ -43,11 +43,12 @@ body {
 	background-color: #ffffff;
 	box-shadow: -5px -5px 50px 0 black;
 
-	min-height: 200px;
-	height: 20vh;
+	min-height: 150px;
+	height: 21vh;
 }
 
 .container {
+	position: relative;
 	min-width: 900px;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -87,21 +88,22 @@ a {
 
 .login {
 	position: relative;
-	color: red;
+	margin-top: 60px;
+	color: #39b59c;
 	border: 2px solid #39b59c;
-	padding-left: 50px; 
-	background: #39b59c;
+	padding-left: 60px; 
+	background: white;
 }
 
 .login::before {
 	content: '';
-	width: 30px;
-	height: 23px;
+	width: 37px;
+	height: 26px;
 	position: absolute;
 	top: 9px;
 	left: 8px;
 	background: url("../img/login-icon.svg");
-	background-size: contain;
+	background-size: cover;
 }
 
 
@@ -117,20 +119,24 @@ a {
 }
 
 .main-header .user-block {
-	float: right;
-	margin-top: 40px;
-	outline: 2px dotted green;
+	text-align: right;
 }
 
 .main-navigation {
+	position: absolute;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	bottom: -130px;
+	z-index: 1;
+
 	height: 68px;
 	width: 760px;
 	padding: 0 20px;
 	background-image: url("../img/ribbon.svg");
 	margin: 0 auto;
-	position: relative;
-	top: 18vh;
-	z-index: 1;
 }
 
 .main-navigation .menu-left {
