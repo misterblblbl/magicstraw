@@ -43,8 +43,8 @@ body {
 	background-color: #ffffff;
 	box-shadow: -5px -5px 50px 0 black;
 
-	min-height: 150px;
 	height: 21vh;
+	min-height: 150px;
 }
 
 .container {
@@ -97,11 +97,11 @@ a {
 
 .login::before {
 	content: '';
-	width: 37px;
-	height: 26px;
+	width: 32px;
+	height: 24px;
 	position: absolute;
 	top: 9px;
-	left: 8px;
+	left: 15px;
 	background: url("../img/login-icon.svg");
 	background-size: cover;
 }
@@ -272,8 +272,9 @@ a {
 }
 
 .footer-copyright {
-	padding-top: 140px;
+	padding-top: 110px;
 	color: lightgrey;
+    text-align: right;
 }
 
 /* ********************************************СЛАЙДЕР**************************** */
