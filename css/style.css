@@ -44,6 +44,7 @@ body {
 	box-shadow: -5px -5px 50px 0 black;
 
 	height: 21vh;
+	padding-top: 115px;
 	min-height: 150px;
 }
 
@@ -210,10 +211,10 @@ a {
 .footer-navigation {
 	padding-left: 100px;
 	position: absolute;
-	top: -80px;
+	top: -205px;
+
 	z-index: 10;
 	width: 528px;
-
 }
 
 .footer-navigation ul {
@@ -272,7 +273,39 @@ a {
 }
 
 .footer-copyright {
-	padding-top: 110px;
+	padding-top: 20px;
 	color: lightgrey;
     text-align: right;
 }
+
+.footer-sitemap {
+	margin: 0 auto;
+	padding-top: 23px;
+	max-width: 565px;
+}
+
+.sitemap-row {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 30px;
+	float: left;
+}
+
+.sitemap-row a {
+	font-size: 13px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+
+.sitemap-row a:hover {
+	color: #39b59c;
+}
+
+.sitemap-row li:first-child a {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
