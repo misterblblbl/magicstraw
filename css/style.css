@@ -26,7 +26,9 @@ body {
 	height: 20px;
 	position: absolute;
 	bottom: -19px;
-	background: url("../img/curved-line.svg");
+	background-image: url("../img/curved-line.png");
+	background-repeat: repeat-x;
+	background-size: 20px;
 }
 
 .main-content {
