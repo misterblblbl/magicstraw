@@ -14,7 +14,7 @@ body {
 	position: relative;
 	width: auto;
 	min-height: 150px;
-	height: 16vh;
+	height: 12vh;
 
 	background-color: #ffffff;
 	box-shadow: 5px 5px 50px 0 black;
@@ -31,9 +31,8 @@ body {
 
 .main-content {
 	position: relative;
-	height: 63vh;
-	min-height: 650px;
-	padding-top: 40px;
+	/*height: 63vh;*/
+	/*min-height: 650px;*/
 	box-sizing: border-box;
 }
 
@@ -43,8 +42,8 @@ body {
 	background-color: #ffffff;
 	box-shadow: -5px -5px 50px 0 black;
 
-	height: 21vh;
-	padding-top: 115px;
+	height: 15vh;
+	padding-top: 105px;
 	min-height: 150px;
 }
 
@@ -109,13 +108,10 @@ a {
 
 
 .header-logo {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
+	position: relative;
+	display: block;
+	float: left;
+	top: -130%;
 	z-index: 2;
 }
 
@@ -139,11 +135,12 @@ a {
  	float: left;
  	padding: 20px;
  	padding-left: 30px;
+	padding-right: 30px;
 }
 .main-navigation .menu-right {
  	float: right;
  	padding: 20px;
- 	padding-left: 10px;
+ 	padding-left: 30px;
 }
 
 .main-navigation a:nth-child(2) {
@@ -211,7 +208,7 @@ a {
 .footer-navigation {
 	padding-left: 100px;
 	position: absolute;
-	top: -205px;
+	top: -190px;
 
 	z-index: 10;
 	width: 528px;
