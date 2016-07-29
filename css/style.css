@@ -205,8 +205,9 @@ a {
 	position: absolute;
 	left: 0;
 	top: -20px;
-	background-image: url("../img/curved-line.svg");
+	background-image: url("../img/curved-line.png");
 	background-repeat: repeat-x;
+	background-size: 20px;
 	z-index: 10;
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
