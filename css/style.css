@@ -31,8 +31,9 @@ body {
 
 .main-content {
 	position: relative;
-	/*height: 63vh;*/
-	/*min-height: 650px;*/
+	height: 65vh;
+	min-height: 650px;
+	padding-top: 30px;
 	box-sizing: border-box;
 }
 
@@ -108,10 +109,11 @@ a {
 
 
 .header-logo {
-	position: relative;
+	position: absolute;
 	display: block;
 	float: left;
 	top: -130%;
+	left: 35%;
 	z-index: 2;
 }
 
