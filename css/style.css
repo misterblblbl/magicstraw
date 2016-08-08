@@ -27,13 +27,14 @@ body {
 	position: absolute;
 	bottom: -19px;
 	background-image: url("../img/curved-line.png");
-	background-repeat: repeat-x;
-	background-size: 20px;
+	background-size: 23px;
 }
 
 .main-content {
 	position: relative;
-	padding-bottom: 60px;
+	height: 65vh;
+	min-height: 650px;
+	padding-top: 30px;
 	box-sizing: border-box;
 }
 
@@ -168,7 +169,9 @@ a {
 }
 
 .main-picture {
-	width: 100%;
+	float: left;
+	width: 58%;
+	margin-right: 1%;
 }
 
 .main-picture img {
@@ -177,33 +180,15 @@ a {
 }
 
 .main-description {
-	width: 100%;
+	float: right;
+	width: 41%;
+	height: 550px;
+	overflow-y:scroll;
 	color: #ffffff;
 	font-size: 18px;
 	margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-	.main-picture {
-		float: left;
-		width: 58%;
-		margin-right: 1%;
-	}
-
-	.main-description {
-		float: right;
-		width: 41%;
-		height: 550px;
-		overflow-y:scroll;
-	}
-
-	.main-content {
-		height: 65vh;
-		min-height: 650px;
-		padding-top: 30px;
-		padding-bottom: 0;
-	}
-}
 
 .main-description h2 {
     font-size: 2em;
@@ -221,10 +206,9 @@ a {
 	height: 20px;
 	position: absolute;
 	left: 0;
-	top: -20px;
+	top: -19px;
 	background-image: url("../img/curved-line.png");
-	background-repeat: repeat-x;
-	background-size: 20px;
+	background-size: 23px;
 	z-index: 10;
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
