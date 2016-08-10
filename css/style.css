@@ -91,7 +91,7 @@ a {
 
 .login {
 	position: relative;
-	margin-top: 47px;
+	margin-top: 30px;
 	color: #39b59c;
 	border: 2px solid #39b59c;
 	padding-left: 60px; 
@@ -114,9 +114,11 @@ a {
 	position: absolute;
 	display: block;
 	float: left;
+	width: 24%;
 	top: -130%;
 	left: 35%;
 	z-index: 2;
+	text-align: center;
 }
 
 .main-header .user-block {
@@ -127,33 +129,68 @@ a {
     position: relative;
     margin: 0 auto;
     margin-top: -20px;
+	background-color: #FCC814;
+	border: 2px solid #EF4237;
 
-	height: 68px;
-	width: 760px;
+	height: 64px;
+	width: 85%;
+	min-width: 760px;
 	padding: 0 20px;
-	background-image: url("../img/ribbon.svg");
-    background-size: cover;
+}
+
+.main-navigation:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -27px;
+	height: 70px;
+	width: 30px;
+
+	background: url(../img/ribbon-part.svg) no-repeat;
+	background-size: cover;
+}
+
+.main-navigation:after{
+	content: '';
+	position: absolute;
+	top: -3px;
+	right: -27px;
+	height: 70px;
+	width: 30px;
+
+	background: url(../img/ribbon-part.svg);
+	background-size: cover;
+	transform: rotate(-180deg);
 }
 
 .main-navigation .menu-left {
  	float: left;
+	width: 38%;
  	padding: 20px;
  	padding-left: 30px;
 	padding-right: 30px;
+	text-align: left;
 }
 .main-navigation .menu-right {
  	float: right;
+	width: 38%;
  	padding: 20px;
  	padding-left: 30px;
+	text-align: right;
 }
 
-.main-navigation a:nth-child(2) {
-	display: inline-block;
-	margin-left: 40px;
+.main-navigation .menu-left a:nth-child(2) {
+	margin-right: 10%;
+}
+
+.main-navigation .menu-right a:nth-child(2) {
+	margin-left: 10%;
 }
 
 .main-navigation a,
 .main-navigation span {
+	display: inline-block;
+	width: 40%;
 	font-size: 22px;
 	text-shadow: 1px 1px 0 white;
 	font-weight: 600;
